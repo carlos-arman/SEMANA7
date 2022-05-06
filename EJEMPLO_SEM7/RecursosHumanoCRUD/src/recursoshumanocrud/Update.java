@@ -22,21 +22,21 @@ public class Update {
         String tablaBuscar = "tb_contacto";
         String camposBuscar = "id_contacto, nom_contacto, email_contacto, tel_contacto";
         String condicionBuscar = "id_contacto = " + person.getIdPersona();
-        cone.actualizarEliminarRegistro(tablaBuscar, camposBuscar, condicionBuscar);
-        leer.nextLine();
-        System.out.println("Nombre ");
-        person.setNomPersona(leer.nextLine());
+        cone.desplegarRegistros(tablaBuscar, camposBuscar, condicionBuscar);
+        
+        System.out.println("Nombre: ");
+        person.setNomPersona(leer.next());
         
         System.out.println("Correo contacto: ");
-        person.setEmailPersona(leer.nextLine());
+        person.setEmailPersona(leer.next());
      
-        System.out.println("Telefono ");
-        person.setTelPersona(leer.nextLine());
+        System.out.println("Telefono: ");
+        person.setTelPersona(leer.next());
        
         
         
-        String tabla ="tb_contacto";
-        String nuevosCampos = "nom_contacto = '" + person.getNomPersona() + "',email_contacto = '" + person.getEmailPersona()  + "',tel_contacto = '" + person.getTelPersona() + "'";
+        String tabla = "tb_contacto";
+        String nuevosCampos = "nom_contacto = '" + person.getNomPersona() + "', email_contacto = '" + person.getEmailPersona() + "', tel_contacto = '" + person.getTelPersona() + "'";
         
         cone.actualizarEliminarRegistro(tabla, nuevosCampos, condicionBuscar);
         System.out.println("Modificado");
