@@ -33,16 +33,16 @@ public class MenuPrincipal {
 
         switch(opcionMenu){
             case "1" :
-            //Create create = new Create();
+            Create create = new Create();
             break;
             case "2":
-                //Read read = new Read();
+                Read read = new Read();
             break;
             case "3" :
-                //Update update = new Update();
+                Update update = new Update();
             break;
             case "4" :
-                //Delete delete = new Delete();
+                Delete delete = new Delete();
             break;
             case "5":
                 
