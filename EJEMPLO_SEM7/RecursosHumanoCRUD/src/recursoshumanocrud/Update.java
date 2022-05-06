@@ -7,7 +7,7 @@ package recursoshumanocrud;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-
+//ACTUALIZAR
 public class Update {
     Update() throws SQLException{
         Scanner leer = new Scanner(System.in);
